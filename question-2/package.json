@@ -2,7 +2,7 @@
   "name": "customer-api-crud",
   "description": "A simple customer CRUD REST API made with fastify",
   "version": "1.0.0",
-  "repository": "https://github.com/osoaresvictor/clear-sale-test.git",
+  "repository": "https://github.com/osoaresvictor/NodeJS-engineer-test.git",
   "author": {
     "name": "Victor Soares",
     "email": "victor_soares@live.com",
