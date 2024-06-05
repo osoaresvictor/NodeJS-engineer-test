@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customer-api-crud
+  labels:
+    app: customer-api-crud
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: customer-api-crud
+  template:
+    metadata:
+      labels:
+        app: customer-api-crud
+    spec:
+      containers:
+      - name: customer-api-crud
+        image: <account-id>.dkr.ecr.us-west-2.amazonaws.com/customer-api-crud:latest
+        resources:
+          limits:
+            memory: 100Mi
+        ports:
+        - containerPort: 3000
+      automountServiceAccountToken: false
